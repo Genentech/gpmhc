@@ -1,0 +1,20 @@
+name: gpmhc
+channels:
+  - defaults
+  - pytorch
+  - dglteam/label/cu118
+  - nvidia
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - accelerate=0.19.0=pyhd8ed1ab_0
+  - dgl=1.1.0.cu118=py310_0
+  - fastai=2.7.11=pyhd8ed1ab_0
+  - fire=0.5.0=pyhd8ed1ab_0
+  - numpy=1.24.3=py310ha4c1d20_0
+  - pandas=2.0.2=py310h7cbd5c2_0
+  - text_extensions_for_pandas=0.2.0=py310hff52083_2
+  - torchvision=0.14.1=cuda112py310hb1d1f80_1
+  - pip:
+    - -e .
